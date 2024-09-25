@@ -1,6 +1,6 @@
 FROM python:3.7-slim-buster
-WORKDIR /app
-COPY . /app
+WORKDIR /ML-project
+COPY . /ML-project
 
 RUN apt update -y
 
