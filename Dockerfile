@@ -1,8 +1,21 @@
-FROM python:3.7-slim-buster
-WORKDIR /ML-project
-COPY . /ML-project
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
 
-RUN apt update -y
+# Set the working directory in the container
+WORKDIR /app
 
-RUN apt-get update && pip install -r requirements.txt
-CMD ["python3", "app.py"]
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose port 80 for the Flask app
+EXPOSE 80
+
+# Set environment variables
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=production
+
+# Run the flask command when the container launches
+CMD ["gunicorn", "--bind", "0.0.0.0:80", "app:app"]

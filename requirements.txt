@@ -5,4 +5,5 @@ matplotlib
 scikit-learn
 xgboost
 flask
+gunicorn==20.1.0
 # -e .
