@@ -34,10 +34,10 @@
 <body>
     <h1>Welcome to the Home Page</h1>
 
-    <!-- Redirect button to home.html -->
-    <a href="https://studentperformancecheck-d9duegf3h5dnfwe0.canadacentral-01.azurewebsites.net/predictdata">
-        <button class="btn">Go to Student Exam Performance Indicator</button>
-    </a>
+    <!-- Redirect button to the /predictdata route -->
+    <form action="{{ url_for('predict_datapoint') }}" method="get">
+        <button type="submit" class="btn">Go to Student Exam Performance Indicator</button>
+    </form>
 
 </body>
 </html>
