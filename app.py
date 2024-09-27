@@ -44,6 +44,8 @@ def predict_datapoint():
             print("after Prediction")
             return render_template('home.html',results=results[0])
     except Exception as e:
+        print("An error occurred:")
+        print(e)
         raise CustomException(e,sys)
     
 
