@@ -1,9 +1,9 @@
-Student Marks Prediction - End-to-End Machine Learning Project
+# Student Marks Prediction - End-to-End Machine Learning Project
 
 
 This repository contains an industry-level, end-to-end machine learning project for predicting student marks, developed and deployed on Google Cloud Platform (GCP). The project includes data ingestion, transformation, model training, prediction, and deployment via a Flask application.
 
-Table of Contents
+# Table of Contents
   
   1.Project Overview
   2.Project Structure
@@ -14,7 +14,7 @@ Table of Contents
   7.Technologies Used
 
 
-Project Overview
+# Project Overview
 
 This project predicts student marks based on input data such as gender, race/ethnicity, parental education, lunch type, test preparation course, and scores in reading and writing. The entire machine learning pipeline is built and deployed using Flask and hosted on Google Cloud Platform (GCP) for real-time predictions.
 
@@ -26,7 +26,7 @@ Steps:
   5.Web Application: A Flask app provides a web interface for users to input data and get predictions.
   6.Deployment: The Flask application is deployed on Google Cloud Platform using Docker and Cloud Run.
 
-Project Structure
+# Project Structure
     src/
   ├── components/
   │   ├── data_ingestion.py
@@ -45,7 +45,7 @@ Project Structure
   requirements.txt
   README.md
 
-Features
+# Features
   1.Data Ingestion: Automatically reads, processes, and splits data into training and testing sets.
   2.Data Transformation: Scales and encodes data for model training.
   3.Model Training: Trains a machine learning model and evaluates it.
@@ -53,7 +53,7 @@ Features
   5.Flask Web App: Real-time predictions via a web interface.
   6.Deployed on GCP: The application is containerized and deployed using Google Cloud Platform for global accessibility.
 
-Technologies Used
+# Technologies Used
   1.Python
   2.Flask
   3.Pandas
